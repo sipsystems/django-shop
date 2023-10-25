@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{course.title}}{% endblock %}
+
+{% block content %}
+
+<h1 class="mt-5"> {{ course.title }} is advanced course for those who want full understanding</h1>
+<h2> {{ course.title }} is a significant part of {{ course.category }} </h2>
+<h3> {{ course.title }} is offered at discount price {{ course.price }} </h3>
+<p> The current {{ course.title }} has {{ course.students_qty }} students and more than {{ course.reviews_qty }} reviews <br>
+    The course was created on {{ course.created_at }}</p>
+<button class="btn btn-primary">Join</button>
+{% endblock content %}
+
+
+
